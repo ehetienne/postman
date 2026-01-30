@@ -1,0 +1,898 @@
+{
+	"info": {
+		"_postman_id": "8416fceb-d6d0-44a8-b4f8-0e9f718d2683",
+		"name": "eCampusConnect",
+		"description": "APIs related to the Campus Connect system.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "courses",
+			"item": [
+				{
+					"name": "{courseId}",
+					"item": [
+						{
+							"name": "Delete an individual course",
+							"id": "0eb9eb24-29c1-4aec-bd5b-51565074e848",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/courses/:courseId",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"courses",
+										":courseId"
+									],
+									"variable": [
+										{
+											"key": "courseId",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "ae3944ca-45c2-4999-8a6a-ae25e1a11be9",
+									"name": "Get Courses",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseurl}}/courses"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Mon, 19 Jan 2026 19:51:13 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "x-srv-trace",
+											"value": "v=1;t=08251cfc422b28c3"
+										},
+										{
+											"key": "x-srv-span",
+											"value": "v=1;s=f53279c7f7f2eb16"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "x-ratelimit-limit",
+											"value": "120"
+										},
+										{
+											"key": "x-ratelimit-remaining",
+											"value": "118"
+										},
+										{
+											"key": "x-ratelimit-reset",
+											"value": "1612569306"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk\""
+										},
+										{
+											"key": "vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "x-envoy-upstream-service-time",
+											"value": "134"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "__cf_bm=6.EdEo2dpLrpc95j0ynnJmxQF2McCnABNd3Ykhqea8I-1768852273-1.0.1.1-DvUcXxMhqht3a3In1R8ecCSOvaVUscCdBYbdzuyqXg1AcaufQKuZPzUnCbBTJ9wEnoCZIeozkd8K8u_cHgy8hs6w_J4CAX6kgaHeajTtr7g; path=/; expires=Mon, 19-Jan-26 20:21:13 GMT; domain=.pstmn.io; HttpOnly; Secure; SameSite=None"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9c08dd966f5c17f1-BRU"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"courseId\": 2,\n    \"courseName\": \"Information Technology\",\n    \"courseDuration\": 4,\n    \"courseType\": \"Engineering\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Get an individual course",
+							"id": "8a6dbe40-9c99-4184-9c99-7016684d667c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "API-Version",
+										"value": "2.0",
+										"type": "text"
+									},
+									{
+										"key": "sortBy",
+										"value": "courseName",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/courses/:courseId",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"courses",
+										":courseId"
+									],
+									"variable": [
+										{
+											"key": "courseId",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "f81fd174-4a92-43f5-8452-839855cce3f7",
+									"name": "Get Courses",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseurl}}/courses"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Mon, 19 Jan 2026 19:51:13 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "x-srv-trace",
+											"value": "v=1;t=08251cfc422b28c3"
+										},
+										{
+											"key": "x-srv-span",
+											"value": "v=1;s=f53279c7f7f2eb16"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "x-ratelimit-limit",
+											"value": "120"
+										},
+										{
+											"key": "x-ratelimit-remaining",
+											"value": "118"
+										},
+										{
+											"key": "x-ratelimit-reset",
+											"value": "1612569306"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk\""
+										},
+										{
+											"key": "vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "x-envoy-upstream-service-time",
+											"value": "134"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "__cf_bm=6.EdEo2dpLrpc95j0ynnJmxQF2McCnABNd3Ykhqea8I-1768852273-1.0.1.1-DvUcXxMhqht3a3In1R8ecCSOvaVUscCdBYbdzuyqXg1AcaufQKuZPzUnCbBTJ9wEnoCZIeozkd8K8u_cHgy8hs6w_J4CAX6kgaHeajTtr7g; path=/; expires=Mon, 19-Jan-26 20:21:13 GMT; domain=.pstmn.io; HttpOnly; Secure; SameSite=None"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9c08dd966f5c17f1-BRU"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"courseId\": 2,\n    \"courseName\": \"Information Technology\",\n    \"courseDuration\": 4,\n    \"courseType\": \"Engineering\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Update an individual course",
+							"id": "c75b29db-a118-4255-9e00-c02bfdcde58e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "API-Version",
+										"value": "2.0",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"courseName\": \"IT\",\n    \"courseDuration\": 3,\n    \"courseType\": \"Engineering\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseurl}}/courses/:courseId",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"courses",
+										":courseId"
+									],
+									"variable": [
+										{
+											"key": "courseId",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "57f2bc78-8fd9-429d-a1b5-42a770908c95",
+									"name": "Get Courses",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": "{{baseurl}}/courses"
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Mon, 19 Jan 2026 19:51:13 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "x-srv-trace",
+											"value": "v=1;t=08251cfc422b28c3"
+										},
+										{
+											"key": "x-srv-span",
+											"value": "v=1;s=f53279c7f7f2eb16"
+										},
+										{
+											"key": "access-control-allow-origin",
+											"value": "*"
+										},
+										{
+											"key": "x-ratelimit-limit",
+											"value": "120"
+										},
+										{
+											"key": "x-ratelimit-remaining",
+											"value": "118"
+										},
+										{
+											"key": "x-ratelimit-reset",
+											"value": "1612569306"
+										},
+										{
+											"key": "etag",
+											"value": "W/\"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk\""
+										},
+										{
+											"key": "vary",
+											"value": "Accept-Encoding"
+										},
+										{
+											"key": "x-envoy-upstream-service-time",
+											"value": "134"
+										},
+										{
+											"key": "cf-cache-status",
+											"value": "DYNAMIC"
+										},
+										{
+											"key": "Set-Cookie",
+											"value": "__cf_bm=6.EdEo2dpLrpc95j0ynnJmxQF2McCnABNd3Ykhqea8I-1768852273-1.0.1.1-DvUcXxMhqht3a3In1R8ecCSOvaVUscCdBYbdzuyqXg1AcaufQKuZPzUnCbBTJ9wEnoCZIeozkd8K8u_cHgy8hs6w_J4CAX6kgaHeajTtr7g; path=/; expires=Mon, 19-Jan-26 20:21:13 GMT; domain=.pstmn.io; HttpOnly; Secure; SameSite=None"
+										},
+										{
+											"key": "Server",
+											"value": "cloudflare"
+										},
+										{
+											"key": "CF-RAY",
+											"value": "9c08dd966f5c17f1-BRU"
+										}
+									],
+									"cookie": [],
+									"responseTime": null,
+									"body": "{\n    \"courseId\": 2,\n    \"courseName\": \"Information Technology\",\n    \"courseDuration\": 4,\n    \"courseType\": \"Engineering\"\n}"
+								}
+							]
+						}
+					],
+					"id": "ec984913-0954-42f2-a392-73759866b834"
+				},
+				{
+					"name": "Get Courses",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c0c1f0f1-c82b-4e64-b769-24654f930f82",
+								"exec": [
+									"console.log(\"GET request for Courses\");"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"requests": {}
+							}
+						}
+					],
+					"id": "774a2051-d7dc-4cd4-b0f3-aff5c76d575d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseurl}}/courses?sortBy=course Name&pageNum=2&pageSize=20",
+							"host": [
+								"{{baseurl}}"
+							],
+							"path": [
+								"courses"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "course Name"
+								},
+								{
+									"key": "pageNum",
+									"value": "2"
+								},
+								{
+									"key": "pageSize",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "ddf54af2-b9a0-4705-b69f-9396680cae59",
+							"name": "Get Courses",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseurl}}/courses"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 19 Jan 2026 19:51:13 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=08251cfc422b28c3"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=f53279c7f7f2eb16"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "120"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "118"
+								},
+								{
+									"key": "x-ratelimit-reset",
+									"value": "1612569306"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk\""
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "134"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__cf_bm=6.EdEo2dpLrpc95j0ynnJmxQF2McCnABNd3Ykhqea8I-1768852273-1.0.1.1-DvUcXxMhqht3a3In1R8ecCSOvaVUscCdBYbdzuyqXg1AcaufQKuZPzUnCbBTJ9wEnoCZIeozkd8K8u_cHgy8hs6w_J4CAX6kgaHeajTtr7g; path=/; expires=Mon, 19-Jan-26 20:21:13 GMT; domain=.pstmn.io; HttpOnly; Secure; SameSite=None"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9c08dd966f5c17f1-BRU"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"courseId\": 2,\n    \"courseName\": \"Information Technology\",\n    \"courseDuration\": 4,\n    \"courseType\": \"Engineering\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add a new course",
+					"id": "6e4afb25-258f-4e71-81bf-dad3ba9a1bf8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"courseName\": \"Cyber\",\n    \"courseDuration\": 2,\n    \"courseType\": \"IT\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/courses"
+					},
+					"response": [
+						{
+							"id": "df40324a-19bd-42c1-b878-e854a44e261c",
+							"name": "Get Courses",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseurl}}/courses"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Date",
+									"value": "Mon, 19 Jan 2026 19:51:13 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=08251cfc422b28c3"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=f53279c7f7f2eb16"
+								},
+								{
+									"key": "access-control-allow-origin",
+									"value": "*"
+								},
+								{
+									"key": "x-ratelimit-limit",
+									"value": "120"
+								},
+								{
+									"key": "x-ratelimit-remaining",
+									"value": "118"
+								},
+								{
+									"key": "x-ratelimit-reset",
+									"value": "1612569306"
+								},
+								{
+									"key": "etag",
+									"value": "W/\"0-2jmj7l5rSw0yVb/vlWAYkK/YBwk\""
+								},
+								{
+									"key": "vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "x-envoy-upstream-service-time",
+									"value": "134"
+								},
+								{
+									"key": "cf-cache-status",
+									"value": "DYNAMIC"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "__cf_bm=6.EdEo2dpLrpc95j0ynnJmxQF2McCnABNd3Ykhqea8I-1768852273-1.0.1.1-DvUcXxMhqht3a3In1R8ecCSOvaVUscCdBYbdzuyqXg1AcaufQKuZPzUnCbBTJ9wEnoCZIeozkd8K8u_cHgy8hs6w_J4CAX6kgaHeajTtr7g; path=/; expires=Mon, 19-Jan-26 20:21:13 GMT; domain=.pstmn.io; HttpOnly; Secure; SameSite=None"
+								},
+								{
+									"key": "Server",
+									"value": "cloudflare"
+								},
+								{
+									"key": "CF-RAY",
+									"value": "9c08dd966f5c17f1-BRU"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "{\n    \"courseId\": 2,\n    \"courseName\": \"Information Technology\",\n    \"courseDuration\": 4,\n    \"courseType\": \"Engineering\"\n}"
+						}
+					]
+				}
+			],
+			"id": "6a8c1452-3cd8-4161-b6f2-7f61f5313084",
+			"auth": {
+				"type": "basic",
+				"basic": {
+					"password": "123456",
+					"username": "admin"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "58a1c4c0-eacc-4ee0-a0b6-a7dd2f2e6465",
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "7c25406c-c33b-4558-9545-037ea63fa4a9",
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "students",
+			"item": [
+				{
+					"name": "{studentId}",
+					"item": [
+						{
+							"name": "Get an individual student",
+							"id": "136a4b37-b9b7-48a0-ab2e-ac8823788eff",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"firstName\": \"James\",\n    \"lastName\": \"Smith\",\n    \"phoneNumber\": \"555-555-1234\",\n    \"address\": \"US\"\n}"
+								},
+								"url": {
+									"raw": "{{baseurl}}/students/:studentId",
+									"host": [
+										"{{baseurl}}"
+									],
+									"path": [
+										"students",
+										":studentId"
+									],
+									"variable": [
+										{
+											"key": "studentId",
+											"value": "101"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "d6d9303a-c8fa-4311-9b91-feda3d7afe13"
+				},
+				{
+					"name": "Get all the students",
+					"id": "b3a5e115-6e8d-42e7-bd66-010403bab0aa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{baseurl}}/students"
+					},
+					"response": []
+				},
+				{
+					"name": "Adding a student",
+					"id": "eeba4b1a-414d-4db6-a02d-6803cab6408b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\": \"James\",\n    \"lastName\": \"Smith\",\n    \"phoneNumber\": \"555-555-1234\",\n    \"address\": \"US\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseurl}}/students"
+					},
+					"response": []
+				}
+			],
+			"id": "40f3fd65-a647-419f-b7bc-866c8938713b"
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5eab41ec-9b2c-40a2-b49a-0d4c8ae9ae1e",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "7e54a8f2-c0f6-4747-bce5-bf6c4ee6b563",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseurl",
+			"value": ""
+		}
+	]
+}
