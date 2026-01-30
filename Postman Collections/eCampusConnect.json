@@ -493,12 +493,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseUrl}}:{{port}}/courses?sortBy=course Name&pageNum=2&pageSize=20",
+							"raw": "{{baseUrl}}:{{port}}/{{version}}/courses?sortBy=course Name&pageNum=2&pageSize=20",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"port": "{{port}}",
 							"path": [
+								"{{version}}",
 								"courses"
 							],
 							"query": [
