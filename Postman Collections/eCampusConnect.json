@@ -493,9 +493,9 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseurl}}/courses?sortBy=course Name&pageNum=2&pageSize=20",
+							"raw": "{{baseUrl}}/courses?sortBy=course Name&pageNum=2&pageSize=20",
 							"host": [
-								"{{baseurl}}"
+								"{{baseUrl}}"
 							],
 							"path": [
 								"courses"
@@ -867,7 +867,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "5eab41ec-9b2c-40a2-b49a-0d4c8ae9ae1e",
+				"id": "09467ea3-4ca0-4d02-9079-b55bfb391d79",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -879,7 +879,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "7e54a8f2-c0f6-4747-bce5-bf6c4ee6b563",
+				"id": "8c225439-f668-49a6-b8f8-e230441dad1b",
 				"type": "text/javascript",
 				"packages": {},
 				"requests": {},
@@ -891,8 +891,9 @@
 	],
 	"variable": [
 		{
-			"key": "baseurl",
-			"value": ""
+			"key": "baseUrl",
+			"value": "",
+			"disabled": true
 		}
 	]
 }
