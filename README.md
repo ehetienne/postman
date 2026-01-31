@@ -1,2 +1,9 @@
-# postman
-Postman training and experimentations. There is a good change then that this code will not work. ;-)
+# Postman
+Postman training and experimentations. 
+
+## eCampusConnect
+
+This workspace groups the elements created during the Coursera training 'Postman Tutorial: Getting Started with API Testing'.
+
+/!\ This code will not work since it was only experimenting a series of Postman features.
+
